@@ -45,7 +45,9 @@ gulp.task('compress:css', ['css'], function() {
 
 gulp.task('html', function() {
   return gulp.src('./*.pug')
-        .pipe(pug())
+        .pipe(pug({
+          pretty: true
+        }))
         .pipe(gulp.dest('../build'))
         .pipe(browserSync.stream());
 });
