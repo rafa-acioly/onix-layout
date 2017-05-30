@@ -5796,3 +5796,22 @@ label.panel-block:hover {
 .footer {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
+.is-main-font {
+  color: #e51c24; }
+
+.is-main-bg {
+  background-color: #e51c24; }
+
+.is-main-border {
+  border: 1px solid #e51c24; }
+
+.nav {
+  height: 4.25rem; }
+
+.footer {
+  padding: 3rem 1.5rem 3rem; }
+  .footer .container .column .subtitle {
+    margin: 15px 0; }
+
+.field .field-body .fa-envelope-o {
+  color: #e51c24; }
