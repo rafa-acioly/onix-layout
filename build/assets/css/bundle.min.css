@@ -12982,7 +12982,7 @@ a {
   font-weight: 700 !important; }
 
 .has-spacingless-3 {
-  letter-spacing: -3px; }
+  letter-spacing: -2px; }
 
 .is-default {
   background-color: #e51c24;
@@ -13031,7 +13031,7 @@ a {
       color: #c6c6c6;
       font-weight: 700; }
     .hero .column figure figcaption .title {
-      letter-spacing: -3px; }
+      letter-spacing: -2px; }
 
 .footer {
   padding: 3rem 1.5rem 3rem;
