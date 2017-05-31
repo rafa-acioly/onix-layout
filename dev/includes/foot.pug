@@ -1,7 +1,7 @@
 footer.footer
   .container
     .columns
-      .column.is-3.is-offset-1  
+      .column.is-3.is-offset-1-tablet
         h2.is-main-font Unidade matriz
         h1.title Real partk tietê
         p Avenida Guilherme George, 1584
@@ -23,10 +23,15 @@ footer.footer
             span.fa.fa-angle-right
   .container
     .columns
-      .column.is-3.is-offset-1
-        img(src="http://placehold.it/150x75", alt="")
-      .column.has-text-right
-        small Desenvolvido por
-        img(src="http://placehold.it/150x75", alt="")
+      .column.is-offset-1-tablet
+        .level
+          .level-left
+            .level-item
+              p.is-5
+                img(src="http://placehold.it/150x75", alt="")
+          .level-right
+            .level-item
+              small Desenvolvido por
+              img(src="http://placehold.it/150x75", alt="")
 
 script(src='assets/js/bundle.min.js')

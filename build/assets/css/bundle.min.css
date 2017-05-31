@@ -12972,6 +12972,20 @@ label.panel-block:hover {
 .nav {
   height: 4.25rem; }
 
+.hero .column figure {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .hero .column figure figcaption {
+    position: absolute; }
+
 .footer {
   padding: 3rem 1.5rem 3rem; }
   .footer .container .column .subtitle {
