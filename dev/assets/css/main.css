@@ -5808,6 +5808,10 @@ label.panel-block:hover {
 .nav {
   height: 4.25rem; }
 
+.main-info {
+  background-color: #e0e0e0;
+  padding: 5rem 1.5rem; }
+
 .hero .column figure {
   position: relative;
   display: -webkit-box;
@@ -5823,7 +5827,8 @@ label.panel-block:hover {
     position: absolute; }
 
 .footer {
-  padding: 3rem 1.5rem 3rem; }
+  padding: 3rem 1.5rem 3rem;
+  background-color: white; }
   .footer .container .column .subtitle {
     margin: 15px 0; }
 

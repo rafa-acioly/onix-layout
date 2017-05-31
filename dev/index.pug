@@ -7,40 +7,47 @@ html(lang='pt-br')
     
     .hero.is-medium
       .columns.is-gapless
-        .column
+        .column.has-text-centered
           figure
-            img(src="https://source.unsplash.com/random/800x500", alt="").image
+            img(src="assets/images/g3677.png", alt="").image
             figcaption
-              | Texto 1
-        .column
+              h2 Unidade Matriz
+              h1.title Real Park Tietê
+              p Confira os imóveis da onix disponíveis
+              p no condominio real park
+        .column.has-text-centered
           figure
-            img(src="https://source.unsplash.com/random/800x500", alt="").image
+            img(src="assets/images/g3635.png", alt="").image
             figcaption
-              | Texto 2
-    section.hero.is-medium
-      .hero-body
-        .container
-          .columns
-            .column.is-5.is-offset-1-tablet
-              h1.title Seriedade no trabalho e 
+              h2 Unidade Filial
+              h1.title Patteo Mogilar 
                 br
-                span transparência com nossos clientes.
-              p Onix Negócios Imobiliários líder em intermediações de venda e compra no Residencial Real Park Tietê, atua também nos segmentos de imóveis novos e usados.
-            .column.is-4.is-offset-1-tablet
-              h1.title Cadastre-se e receba as 
-                span melhores oportunidades por email.
-              label.label(for="email") Seu melhor email
-              .field.is-horizontal
-                .field-body
-                  .field
-                    p.control.has-icons-left.is-expanded
-                      input.input(type="email", placeholder="Email", name="email")
-                      span.icon.is-small.is-left
-                        i.fa.fa-envelope-o
-                    p.help
-                      | Seu email jamais será compartilhado com terceiros. Você pode cancelar esta assinatura a qualquer momento. Este serviço é gratuito.
-                  .field
-                    p.control.is-expanded
-                      button.button.is-main-border Enviar
+                | Sky Mall e Offices
+              p Confira os imóveis da Onix disponíveis
+              p em Mogi das Cruzes e região
+    section.section.main-info
+      .columns
+        .column.is-5.is-offset-1-tablet
+          h1.title Seriedade no trabalho e 
+            br
+            span transparência com nossos clientes.
+          p Onix Negócios Imobiliários líder em intermediações de venda e compra
+          p no Residencial Real Park Tietê, atua também nos segmentos de imóveis novos e usados.
+        .column.is-4
+          h1.title Cadastre-se e receba as 
+            span melhores oportunidades por email.
+          label.label(for="email") Seu melhor email
+          .field.is-horizontal
+            .field-body
+              .field
+                p.control.has-icons-left.is-expanded
+                  input.input(type="email", placeholder="Email", name="email")
+                  span.icon.is-small.is-left
+                    i.fa.fa-envelope-o
+                p.help
+                  | Seu email jamais será compartilhado com terceiros. Você pode cancelar esta assinatura a qualquer momento. Este serviço é gratuito.
+              .field
+                p.control.is-expanded
+                  button.button.is-outlined Enviar
 
     include includes/foot
