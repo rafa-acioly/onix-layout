@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 /*! bulma.io v0.4.2 | MIT License | github.com/jgthms/bulma */
 @-webkit-keyframes spinAround {
   from {
@@ -5796,8 +5797,13 @@ label.panel-block:hover {
 .footer {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
+html,
+body {
+  font-family: 'Montserrat', sans-serif; }
+
 .is-main-font {
-  color: #e51c24; }
+  color: #e51c24;
+  font-family: 'Montserrat', sans-serif; }
 
 .is-main-bg {
   background-color: #e51c24; }
@@ -5805,12 +5811,25 @@ label.panel-block:hover {
 .is-main-border {
   border: 1px solid #e51c24; }
 
+.is-bold {
+  font-weight: 700 !important; }
+
 .nav {
   height: 4.25rem; }
 
 .main-info {
   background-color: #e0e0e0;
   padding: 5rem 1.5rem; }
+
+.main-button {
+  border: 1px solid #e51c24;
+  background-color: transparent;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  padding: 0 30px; }
+  .main-button:hover {
+    border: 1px solid #e51c24; }
 
 .hero .column figure {
   position: relative;

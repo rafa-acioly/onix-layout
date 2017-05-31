@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700')
 @import 'node_modules/bulma/css/bulma'
 @import '_helpers/colors'
 
+html,
+body
+  font-family: 'Montserrat', sans-serif
+
 .is-main-font
   color: $main-red
+  font-family: 'Montserrat', sans-serif
 
 .is-main-bg
   background-color: $main-red
@@ -10,12 +16,26 @@
 .is-main-border
   border: 1px solid $main-red
 
+.is-bold
+  font-weight: 700 !important
+
 .nav
   height: 4.25rem
 
 .main-info
   background-color: $gray
   padding: 5rem 1.5rem
+
+.main-button
+  border: 1px solid $main-red
+  background-color: transparent
+  color: black
+  font-family: 'Montserrat', sans-serif
+  font-weight: 700
+  padding: 0 30px
+
+  &:hover
+    border: 1px solid $main-red
 
 .hero
 

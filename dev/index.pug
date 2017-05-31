@@ -30,24 +30,25 @@ html(lang='pt-br')
         .column.is-5.is-offset-1-tablet
           h1.title Seriedade no trabalho e 
             br
-            span transparência com nossos clientes.
+            span.is-bold transparência com nossos clientes.
           p Onix Negócios Imobiliários líder em intermediações de venda e compra
           p no Residencial Real Park Tietê, atua também nos segmentos de imóveis novos e usados.
         .column.is-4
           h1.title Cadastre-se e receba as 
-            span melhores oportunidades por email.
+            span.is-bold melhores oportunidades por email.
           label.label(for="email") Seu melhor email
-          .field.is-horizontal
-            .field-body
-              .field
-                p.control.has-icons-left.is-expanded
-                  input.input(type="email", placeholder="Email", name="email")
-                  span.icon.is-small.is-left
-                    i.fa.fa-envelope-o
-                p.help
-                  | Seu email jamais será compartilhado com terceiros. Você pode cancelar esta assinatura a qualquer momento. Este serviço é gratuito.
-              .field
-                p.control.is-expanded
-                  button.button.is-outlined Enviar
+          form(action="")
+            .field.is-horizontal
+              .field-body
+                .field
+                  p.control.has-icons-left.is-expanded
+                    input.input(type="email", placeholder="Email", name="email", required)
+                    span.icon.is-small.is-left
+                      i.fa.fa-envelope-o
+                  p.help
+                    | Seu email jamais será compartilhado com terceiros. Você pode cancelar esta assinatura a qualquer momento. Este serviço é gratuito.
+                .field
+                  p.control.is-expanded
+                    button(type="submit").button.is-outlined.main-button.has-text-left Enviar
 
     include includes/foot
