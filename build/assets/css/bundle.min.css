@@ -12965,6 +12965,9 @@ html,
 body {
   font-family: 'Montserrat', sans-serif; }
 
+a {
+  color: black; }
+
 .is-main-font {
   color: #e51c24;
   font-family: 'Montserrat', sans-serif; }
@@ -12977,6 +12980,19 @@ body {
 
 .is-bold {
   font-weight: 700 !important; }
+
+.has-spacingless-3 {
+  letter-spacing: -3px; }
+
+.is-default {
+  background-color: #e51c24;
+  border-color: #e51c24;
+  color: white;
+  margin-top: 1rem;
+  font-weight: 700; }
+  .is-default:hover {
+    color: white;
+    border-color: #e51c24; }
 
 .nav {
   height: 4.25rem; }
@@ -13008,6 +13024,14 @@ body {
           align-items: center; }
   .hero .column figure figcaption {
     position: absolute; }
+    .hero .column figure figcaption .title,
+    .hero .column figure figcaption p {
+      color: white; }
+    .hero .column figure figcaption h2 {
+      color: #c6c6c6;
+      font-weight: 700; }
+    .hero .column figure figcaption .title {
+      letter-spacing: -3px; }
 
 .footer {
   padding: 3rem 1.5rem 3rem;

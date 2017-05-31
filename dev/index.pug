@@ -12,30 +12,39 @@ html(lang='pt-br')
             img(src="assets/images/g3677.png", alt="").image
             figcaption
               h2 Unidade Matriz
-              h1.title Real Park Tietê
+              h1.title.is-bold.has-spacingless-3 Real Park Tietê
               p Confira os imóveis da onix disponíveis
-              p no condominio real park
+              p.is-bold no condominio Real Park Tietê
+              p
+                button.button.is-default
+                  |Ir para o site
+                  span.fa.fa-angle-right.fa-fw
         .column.has-text-centered
           figure
             img(src="assets/images/g3635.png", alt="").image
             figcaption
               h2 Unidade Filial
-              h1.title Patteo Mogilar 
+              h1.title.is-bold.has-spacingless-3 Patteo Mogilar 
                 br
                 | Sky Mall e Offices
               p Confira os imóveis da Onix disponíveis
-              p em Mogi das Cruzes e região
+              p.is-bold em Mogi das Cruzes e região
+              p
+                button.button.is-default
+                  |Ir para o site
+                  span.fa.fa-angle-right.fa-fw
     section.section.main-info
       .columns
         .column.is-5.is-offset-1-tablet
           h1.title Seriedade no trabalho e 
             br
-            span.is-bold transparência com nossos clientes.
+            span.is-bold.has-spacingless-3 transparência com nossos clientes.
           p Onix Negócios Imobiliários líder em intermediações de venda e compra
           p no Residencial Real Park Tietê, atua também nos segmentos de imóveis novos e usados.
         .column.is-4
           h1.title Cadastre-se e receba as 
-            span.is-bold melhores oportunidades por email.
+            br
+            span.is-bold.has-spacingless-3 melhores oportunidades por email.
           label.label(for="email") Seu melhor email
           form(action="")
             .field.is-horizontal
@@ -49,6 +58,8 @@ html(lang='pt-br')
                     | Seu email jamais será compartilhado com terceiros. Você pode cancelar esta assinatura a qualquer momento. Este serviço é gratuito.
                 .field
                   p.control.is-expanded
-                    button(type="submit").button.is-outlined.main-button.has-text-left Enviar
+                    button(type="submit").button.is-outlined.main-button.has-text-left 
+                      |Cadastrar
+                      span.fa.fa-angle-right.fa-fw
 
     include includes/foot
