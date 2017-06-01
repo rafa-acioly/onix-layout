@@ -18,7 +18,7 @@ html(lang='pt-br')
               a.panel-block
                 | Facebook
                 span.panel-icon
-                  i.fa.fa-angle-down.fa-fw
+                  i.fa.fa-angle-down.fa-fw  
               a.panel-block
                 | Facebook
                 span.panel-icon
@@ -61,9 +61,11 @@ html(lang='pt-br')
                   button.button
                     span.icon
                       i.fa.fa-th
+                .level-item
                   button.button
                     span.icon
                       i.fa.fa-bars
+                .level-item
                   button.button
                     span.icon
                       i.fa.fa-map-marker
@@ -71,11 +73,14 @@ html(lang='pt-br')
               - var n = 0
               while n <= 10
                 .column.is-4
-                  figure
-                    img(src="http://placehold.it/330x300", alt="")
-                    figcaption
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    =n++
+                  .card
+                    .card-image
+                      figure
+                        img(src="http://placehold.it/330x300", alt="")
+                    .card-content
+                      .content
+                        | Lorem ipsum dolor sit amet.
+                - n++
               
 
             

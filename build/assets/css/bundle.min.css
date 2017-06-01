@@ -13040,9 +13040,12 @@ a {
 
 .wrap-content {
   width: 100%;
-  padding: 2rem 0;
-  background-color: white;
-  height: 100%; }
+  padding: 2rem 0; }
+
+.panel .panel-block {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .footer {
   padding: 3rem 1.5rem 3rem;
