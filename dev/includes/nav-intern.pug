@@ -4,10 +4,14 @@ nav.nav
       a.nav-item(href="/")
         img(src="assets/images/onix.png", alt="logo").image
       .nav-item
-        | Unidade Patteo Mogilar
-      .nav-item
+        | Unidade 
+        span.select
+          select(name="")
+            option(value="") Patteo
+            option(value="") Tietê
+      .nav-item.is-hidden-mobile
         | (11) 9999-9999 / (11) 9999-9999
-    .nav-right
+    .nav-right.is-hidden-mobile
       a.nav-item(href="")
         span.icon
           i.fa.fa-search
@@ -15,6 +19,9 @@ nav.nav
         img(src="assets/images/fbicon.png", alt="curta no facebook").image
       a.nav-item(href="")
         img(src="assets/images/path3755.png", alt="siga no instagram").image
+      a.nav-item(href="")
+        span.icon
+          fa.fa.fa-bars
     span.nav-toggle
       span
       span
