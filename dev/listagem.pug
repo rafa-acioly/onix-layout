@@ -56,7 +56,7 @@ html(lang='pt-br')
                               option(value="") 2
                               option(value="") 3
                       p por página
-              .level-right
+              .level-right.is-hidden-mobile
                 .level-item
                   button.button
                     span.icon
@@ -72,19 +72,14 @@ html(lang='pt-br')
             .columns.is-multiline
               - var n = 0
               while n <= 10
-                .column.is-4
+                .column.is-one-third
                   .card
                     .card-image
-                      figure
+                      figure.image
                         img(src="http://placehold.it/330x300", alt="")
                     .card-content
                       .content
-                        | Lorem ipsum dolor sit amet.
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 - n++
-              
 
-            
-
-    
-    
     include includes/foot

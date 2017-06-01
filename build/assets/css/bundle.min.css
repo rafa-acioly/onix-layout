@@ -13042,6 +13042,9 @@ a {
   width: 100%;
   padding: 2rem 0; }
 
+.nav-left select {
+  border: none; }
+
 .panel .panel-block {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
