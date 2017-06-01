@@ -12966,7 +12966,7 @@ body {
   font-family: 'Montserrat', sans-serif; }
 
 a {
-  color: black; }
+  color: #363636; }
 
 .is-main-font {
   color: #e51c24;
@@ -12981,8 +12981,11 @@ a {
 .is-bold {
   font-weight: 700 !important; }
 
-.has-spacingless-3 {
+.has-spacingless-2 {
   letter-spacing: -2px; }
+
+.has-spacingless-2-5 {
+  letter-spacing: -2.5px; }
 
 .is-default {
   background-color: #e51c24;
@@ -12995,7 +12998,9 @@ a {
     border-color: #e51c24; }
 
 .nav {
-  height: 4.25rem; }
+  height: 5.25rem; }
+  .nav .nav-item img[alt="logo"] {
+    max-height: 2.75rem; }
 
 .main-info {
   background-color: #e0e0e0;
@@ -13031,7 +13036,13 @@ a {
       color: #c6c6c6;
       font-weight: 700; }
     .hero .column figure figcaption .title {
-      letter-spacing: -2px; }
+      letter-spacing: -3.7px; }
+
+.wrap-content {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: white;
+  height: 100%; }
 
 .footer {
   padding: 3rem 1.5rem 3rem;

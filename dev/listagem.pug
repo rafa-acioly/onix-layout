@@ -1,0 +1,85 @@
+doctype
+html(lang='pt-br')
+  include includes/head
+
+  body
+    include includes/nav-intern
+
+    .wrap-content
+      .container
+        .columns
+          .column.has-text-left
+            h1.title Titulo da busca realizada
+            h2.subtitle
+              small 243 imóveis encontrado(s)
+        .columns
+          .column.is-3
+            nav.panel
+              a.panel-block
+                | Facebook
+                span.panel-icon
+                  i.fa.fa-angle-down.fa-fw
+              a.panel-block
+                | Facebook
+                span.panel-icon
+                  i.fa.fa-angle-down.fa-fw
+              a.panel-block
+                | Facebook
+                span.panel-icon
+                  i.fa.fa-angle-down.fa-fw
+              a.panel-block
+                | Facebook
+                span.panel-icon
+                  i.fa.fa-angle-down.fa-fw
+              a.panel-block
+                | Facebook
+                span.panel-icon
+                  i.fa.fa-angle-down.fa-fw
+          .column
+            .level
+              .level-left
+                .level-item
+                  .field.is-horizontal
+                    .field-body
+                      .field.is-grouped
+                        p.control.is-expanded
+                          span.select
+                            select(name="")
+                              option(value="") por atualização
+                              option(value="") 2
+                              option(value="") 3
+                      .field
+                        p.control
+                          span.select
+                            select(name="")
+                              option(value="") 1
+                              option(value="") 2
+                              option(value="") 3
+                      p por página
+              .level-right
+                .level-item
+                  button.button
+                    span.icon
+                      i.fa.fa-th
+                  button.button
+                    span.icon
+                      i.fa.fa-bars
+                  button.button
+                    span.icon
+                      i.fa.fa-map-marker
+            .columns.is-multiline
+              - var n = 0
+              while n <= 10
+                .column.is-4
+                  figure
+                    img(src="http://placehold.it/330x300", alt="")
+                    figcaption
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    =n++
+              
+
+            
+
+    
+    
+    include includes/foot
