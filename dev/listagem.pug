@@ -22,7 +22,7 @@ html(lang='pt-br')
                   span.panel-icon
                     i.fa.fa-angle-down.fa-fw
           .column
-            .level
+            .level.header-options
               .level-left
                 .level-item
                   .field.is-horizontal
@@ -30,39 +30,40 @@ html(lang='pt-br')
                       .field.is-grouped
                         p.control.is-expanded
                           span.select
-                            select(name="")
+                            select(name="").is-borderless
                               option(value="") por atualização
                               option(value="") 2
                               option(value="") 3
                       .field
                         p.control
                           span.select
-                            select(name="")
+                            select(name="").is-borderless
                               option(value="") 1
                               option(value="") 2
                               option(value="") 3
                       p por página
               .level-right.is-hidden-mobile
                 .level-item
-                  button.button
+                  button.button.is-borderless
                     span.icon
                       i.fa.fa-th
                 .level-item
-                  button.button
+                  button.button.is-borderless
                     span.icon
                       i.fa.fa-bars
                 .level-item
-                  button.button
+                  button.button.is-borderless
                     span.icon
                       i.fa.fa-map-marker
             .columns.is-multiline
               - var n = 0
               while n <= 10
+                // Replicar cada coluna para listagem
                 .column.is-one-third
                   .card
                     .card-image
                       figure.image
-                        img(src="https://source.unsplash.com/category/buildings/?building", alt="")
+                        img(src="https://source.unsplash.com/category/buildings/?apartment", alt="")
                         small.has-text-centered Ref.: TEF000
                     .card-content
                       .content
@@ -84,5 +85,6 @@ html(lang='pt-br')
                         p.title.is-lessspaced.is-6 Valor da venda:
                         p.subtitle.is-4 R$100.000,00
                 - n++
+    include includes/newsletter
 
     include includes/foot
