@@ -3,7 +3,7 @@ html(lang='pt-br')
   include includes/head
 
   body
-    include includes/nav-intern
+    include includes/nav
 
     .wrap-content
       .container
@@ -13,28 +13,14 @@ html(lang='pt-br')
             h2.subtitle
               small 243 imóveis encontrado(s)
         .columns
+          - var lista = ['Pretensão', 'Valor de Venda', 'Finalidade', 'Tipo', 'Cidade', 'Caracteristica', 'Dormitórios', 'Suites', 'Vagas', 'Área útil/construida', 'Área total', 'Condominio fechado']
           .column.is-3
             nav.panel
-              a.panel-block
-                | Facebook
-                span.panel-icon
-                  i.fa.fa-angle-down.fa-fw  
-              a.panel-block
-                | Facebook
-                span.panel-icon
-                  i.fa.fa-angle-down.fa-fw
-              a.panel-block
-                | Facebook
-                span.panel-icon
-                  i.fa.fa-angle-down.fa-fw
-              a.panel-block
-                | Facebook
-                span.panel-icon
-                  i.fa.fa-angle-down.fa-fw
-              a.panel-block
-                | Facebook
-                span.panel-icon
-                  i.fa.fa-angle-down.fa-fw
+              each val in lista
+                a.panel-block
+                  =val
+                  span.panel-icon
+                    i.fa.fa-angle-down.fa-fw
           .column
             .level
               .level-left
@@ -76,10 +62,27 @@ html(lang='pt-br')
                   .card
                     .card-image
                       figure.image
-                        img(src="http://placehold.it/330x300", alt="")
+                        img(src="https://source.unsplash.com/category/buildings/?building", alt="")
+                        small.has-text-centered Ref.: TEF000
                     .card-content
                       .content
-                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        h1.title.is-4 Terreno - Venda
+                        h2.subtitle.is-6 Real Park Tietê Jundiapeba - Mogi das Cruzes / SP
+                        .level
+                          .level-item.has-text-centered
+                            div
+                              h3.title.is-spaced 3
+                              small.subtitle dorm(s)
+                          .level-item.has-text-centered
+                            div
+                              h3.title.is-spaced 1
+                              small.subtitle suíte(s)
+                          .level-item.has-text-centered
+                            div
+                              h3.title.is-spaced 3
+                              small.subtitle Vagas
+                        p.title.is-lessspaced.is-6 Valor da venda:
+                        p.subtitle.is-4 R$100.000,00
                 - n++
 
     include includes/foot

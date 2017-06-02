@@ -3,7 +3,16 @@ html(lang='pt-br')
   include includes/head
 
   body
-    include includes/nav
+    nav.nav
+      .container
+        .nav-left
+          a.nav-item(href="/")
+            img(src="assets/images/onix.png", alt="logo").image
+        .nav-right
+          a.nav-item(href="")
+            img(src="assets/images/fbicon.png", alt="curta no facebook").image
+          a.nav-item(href="")
+            img(src="assets/images/path3755.png", alt="siga no instagram").image
     
     .hero.is-medium
       .columns.is-gapless
