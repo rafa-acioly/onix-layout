@@ -5799,7 +5799,8 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem; }
 html,
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1px; }
 
 a {
   color: #363636; }
@@ -5837,6 +5838,10 @@ a {
   height: 5.25rem; }
   .nav .nav-item img[alt="logo"] {
     max-height: 2.75rem; }
+  .nav .nav-item select {
+    font-weight: 700; }
+  .nav .nav-contact {
+    font-weight: 700; }
 
 .main-info {
   background-color: #e0e0e0;
@@ -5920,7 +5925,7 @@ a {
       padding: 5px;
       border-radius: 5px;
       background-color: white;
-      width: 28%;
+      width: 35%;
       margin: -1em;
       font-weight: 700; }
   .card .card-content .level {
@@ -5932,6 +5937,50 @@ a {
       margin-bottom: 0; }
   .card .card-content .is-lessspaced {
     margin-bottom: 1.3em; }
+
+header .title {
+  color: #e51c24;
+  font-weight: 700;
+  letter-spacing: -3px; }
+
+header .subtitle {
+  color: #808080; }
+
+header .breadcrumb {
+  margin-bottom: 1rem; }
+  header .breadcrumb li {
+    display: inline-block; }
+    header .breadcrumb li:first-child {
+      padding-right: 10px; }
+      header .breadcrumb li:first-child:before {
+        content: ' < '; }
+    header .breadcrumb li:not(:first-child) {
+      color: #808080; }
+    header .breadcrumb li:not(:first-child):not(:last-child) {
+      padding: 0 7px; }
+      header .breadcrumb li:not(:first-child):not(:last-child):after {
+        content: ' > '; }
+
+aside .panel-block {
+  font-weight: 700;
+  color: #4d4d4d; }
+
+main .title {
+  color: #4d4d4d; }
+
+main .subtitle,
+main .label-price {
+  color: #808080; }
+
+main .price,
+main select {
+  font-weight: 700; }
+
+main .price {
+  color: #e51c24; }
+
+main select {
+  color: #808080; }
 
 .header-options .level-item .is-borderless {
   border: none; }

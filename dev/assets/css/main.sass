@@ -5,6 +5,7 @@
 html,
 body
   font-family: 'Montserrat', sans-serif
+  letter-spacing: -1px
 
 a
   color: $black
@@ -46,6 +47,12 @@ a
 
     img[alt="logo"]
       max-height: 2.75rem
+
+    select,
+      font-weight: 700
+
+  .nav-contact
+    font-weight: 700
 
 .main-info
   background-color: $gray
@@ -135,7 +142,7 @@ a
         padding: 5px
         border-radius: 5px
         background-color: white
-        width: 28%
+        width: 35%
         margin: -1em
         font-weight: 700
 
@@ -154,6 +161,62 @@ a
 
     .is-lessspaced
       margin-bottom: 1.3em
+
+header
+
+  .title
+    color: $main-red
+    font-weight: 700
+    letter-spacing: -3px
+
+  .subtitle
+    color: $lighter-gray
+
+  .breadcrumb
+    margin-bottom: 1rem
+
+    li
+      display: inline-block
+
+      &:first-child
+        padding-right: 10px
+        &:before
+          content: ' < '
+
+      &:not(:first-child)
+        color: $lighter-gray
+
+      &:not(:first-child):not(:last-child)
+        padding: 0 7px
+
+        &:after
+          content: ' > '
+
+aside
+
+  .panel-block
+    font-weight: 700
+    color: $main-gray
+
+main
+
+  .title
+    color: $main-gray
+
+  .subtitle,
+  .label-price
+    color: $lighter-gray
+
+  .price,
+  select
+    font-weight: 700
+
+  .price
+    color: $main-red
+
+  select
+    color: $lighter-gray
+
 
 .header-options
 

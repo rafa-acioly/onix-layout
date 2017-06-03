@@ -7,21 +7,25 @@ html(lang='pt-br')
 
     .wrap-content
       .container
-        .columns
-          .column.has-text-left
-            h1.title Titulo da busca realizada
+        header.columns
+          .column.has-text-lefts
+            ul.breadcrumb
+              li Voltar
+              li Home
+              li Listagem de Imóveis
+            h1.title Título da busca realizada
             h2.subtitle
               small 243 imóveis encontrado(s)
         .columns
           - var lista = ['Pretensão', 'Valor de Venda', 'Finalidade', 'Tipo', 'Cidade', 'Caracteristica', 'Dormitórios', 'Suites', 'Vagas', 'Área útil/construida', 'Área total', 'Condominio fechado']
-          .column.is-3
-            nav.panel
+          aside.column.is-3
+            .panel
               each val in lista
                 a.panel-block
                   =val
                   span.panel-icon
                     i.fa.fa-angle-down.fa-fw
-          .column
+          main.column
             .level.header-options
               .level-left
                 .level-item
@@ -32,15 +36,20 @@ html(lang='pt-br')
                           span.select
                             select(name="").is-borderless
                               option(value="") por atualização
-                              option(value="") 2
-                              option(value="") 3
                       .field
                         p.control
                           span.select
                             select(name="").is-borderless
-                              option(value="") 1
-                              option(value="") 2
+                              option(value="") 12
+                              option(value="") 12
                               option(value="") 3
+                              option(value="") 4
+                              option(value="") 5
+                              option(value="") 6
+                              option(value="") 7
+                              option(value="") 8
+                              option(value="") 9
+                              option(value="") 10
                       p por página
               .level-right.is-hidden-mobile
                 .level-item
@@ -63,7 +72,7 @@ html(lang='pt-br')
                   .card
                     .card-image
                       figure.image
-                        img(src="https://source.unsplash.com/category/buildings/?apartment", alt="")
+                        img(src="assets/images/placeholder.png", alt="")
                         small.has-text-centered Ref.: TEF000
                     .card-content
                       .content
@@ -82,8 +91,8 @@ html(lang='pt-br')
                             div
                               h3.title.is-spaced 3
                               small.subtitle Vagas
-                        p.title.is-lessspaced.is-6 Valor da venda:
-                        p.subtitle.is-4 R$100.000,00
+                        p.title.is-lessspaced.is-6.label-price Valor da venda:
+                        p.subtitle.is-4.price R$ 100.000,00
                 - n++
     include includes/newsletter
 

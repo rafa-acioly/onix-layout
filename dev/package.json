@@ -5,7 +5,7 @@
     "browser-sync": "^2.18.8",
     "bulma": "^0.4.*",
     "font-awesome": "^4.7.0",
-    "gulp": "^3.8.6",
+    "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^2.0.6",
     "gulp-imagemin": "^3.2.0",
