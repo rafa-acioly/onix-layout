@@ -16,17 +16,24 @@ html(lang='pt-br')
             h1.title Título da busca realizada
             h2.subtitle
               small 243 imóveis encontrado(s)
-        .columns
+        aside.columns
           - var lista = ['Pretensão', 'Valor de Venda', 'Finalidade', 'Tipo', 'Cidade', 'Caracteristica', 'Dormitórios', 'Suites', 'Vagas', 'Área útil/construida', 'Área total', 'Condominio fechado']
-          aside.column.is-3
+          .column.is-3.is-hidden-mobile
             .panel
               each val in lista
                 a.panel-block
                   =val
                   span.panel-icon
                     i.fa.fa-angle-down.fa-fw
+          .column.is-3.is-hidden-tablet
+            .field.is-horizontal
+              p.control
+                .select.is-fullwidth
+                  select(name="")
+                    each op in lista
+                      option(value=op) #{op}
           main.column
-            .level.header-options
+            .level.header-options.is-hidden-mobile
               .level-left
                 .level-item
                   .field.is-horizontal

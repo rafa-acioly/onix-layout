@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 gulp.task('sync', ['copyfiles', 'compress:css', 'html'], function() {
 	browserSync.init({
 		server: '../build/'
-	});
+});
 
 	gulp.watch('./assets/css/*.sass', ['compress:css']);
   gulp.watch('./assets/js/main.js', ['compress:js']);
