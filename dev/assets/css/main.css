@@ -6000,3 +6000,19 @@ main select {
 
 .field .field-body .fa-envelope-o {
   color: #e51c24; }
+
+.wrap-content-half {
+  background: linear-gradient(to bottom, #f1f1f1, #e0e0e0);
+  padding: 2rem 0; }
+  .wrap-content-half header {
+    margin-bottom: 3.5rem; }
+  .wrap-content-half .mini .column {
+    margin-top: 1rem;
+    padding: 0 0.25rem; }
+  .wrap-content-half .mini img {
+    cursor: pointer; }
+  .wrap-content-half .columns .form-detail {
+    background-color: white;
+    border-radius: 10px;
+    margin-top: -2rem;
+    padding: 1rem 1.5rem; }

@@ -1,0 +1,52 @@
+doctype
+html(lang='pt-br')
+  include includes/head
+  body
+    include includes/nav
+    .wrap-content-half
+      .has-text-centered
+        header
+          h2.subtitle
+            small TEF000
+          h1.title Terreno residencial à venda, Real Park 
+            br
+            |Tietê undiapeba, Mogi das Cruzes.
+          h2.subtitle
+            small Valor de venda:
+            | 
+            | R$ 100.000,00
+        main.container
+          .columns.is-gapless.is-half.is-offset-one-quarter
+            .column
+              img(src="assets/images/detalhe.png").image
+              .columns.mini.is-multiline
+                each val in [1,2,3,4,5,6]
+                  .column
+                    img(src="assets/images/m"+val+".png")
+            .column.has-text-left.form-detail.is-5
+              h1.title Tenho interesse neste imóvel
+              form
+                .field
+                  p.control
+                    input(type="text", placeholder="Seu nome", required).input
+                .field
+                  p.control
+                    input(type="text", placeholder="Seu email", required).input
+                .field
+                  p.control
+                    input(type="text", placeholder="Seu telefone", required).input
+                .field
+                  p.control
+                    textarea(col="10", row="5").textarea Olá! Tenho interesse neste imóvel: Terreno no bairro Real Park
+                .field
+                  p.control
+                    button.button.is-large.is-fullwidth Receber atendimento
+                      span.icons
+                        i.fa.fa-envelope-o.fa-fw
+              br
+              h2.subtitle ou Faça uma Proposta
+              | TEF000
+              p Valor de venda: R$ 100.00,00
+    
+    include includes/newsletter
+    include includes/foot
