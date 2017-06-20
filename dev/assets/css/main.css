@@ -6015,6 +6015,7 @@ main select {
     background-color: white;
     border-radius: 10px;
     margin-top: -2rem;
+    margin-bottom: -2rem;
     padding: 1rem 1.5rem;
     font-family: 'Montserrat', sans-serif; }
     .wrap-content-half .columns .form-detail .title {
