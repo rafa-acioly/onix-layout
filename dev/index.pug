@@ -1,49 +1,45 @@
-doctype
-html(lang='pt-br')
-  include includes/head
+include includes/head
+  nav.nav
+    .container
+      .nav-left
+        a.nav-item(href="/")
+          img(src="assets/images/onix.png", alt="logo").image
+      .nav-right
+        a.nav-item(href="")
+          img(src="assets/images/fbicon.png", alt="curta no facebook").image
+        a.nav-item(href="")
+          img(src="assets/images/path3755.png", alt="siga no instagram").image
+  
+  .hero.is-medium
+    .columns.is-gapless
+      .column.has-text-centered
+        figure
+          img(src="assets/images/g3677.png", alt="").image
+          figcaption
+            h2 Unidade Matriz
+            h1.title.is-bold.has-spacingless-4 Real Park 
+              br
+              |Tietê
+            p Confira os imóveis da onix disponíveis
+            p.is-bold no condominio Real Park Tietê
+            p
+              button.button.is-default
+                |Ir para o site
+                span.fa.fa-angle-right.fa-fw
+      .column.has-text-centered
+        figure
+          img(src="assets/images/g3635.png", alt="").image
+          figcaption
+            h2 Unidade Filial
+            h1.title.is-bold.has-spacingless-4 Patteo Mogilar 
+              br
+              | Sky Mall e Offices
+            p Confira os imóveis da Onix disponíveis
+            p.is-bold em Mogi das Cruzes e região
+            p
+              button.button.is-default
+                |Ir para o site
+                span.fa.fa-angle-right.fa-fw
+  include includes/newsletter
 
-  body
-    nav.nav
-      .container
-        .nav-left
-          a.nav-item(href="/")
-            img(src="assets/images/onix.png", alt="logo").image
-        .nav-right
-          a.nav-item(href="")
-            img(src="assets/images/fbicon.png", alt="curta no facebook").image
-          a.nav-item(href="")
-            img(src="assets/images/path3755.png", alt="siga no instagram").image
-    
-    .hero.is-medium
-      .columns.is-gapless
-        .column.has-text-centered
-          figure
-            img(src="assets/images/g3677.png", alt="").image
-            figcaption
-              h2 Unidade Matriz
-              h1.title.is-bold.has-spacingless-4 Real Park 
-                br
-                |Tietê
-              p Confira os imóveis da onix disponíveis
-              p.is-bold no condominio Real Park Tietê
-              p
-                button.button.is-default
-                  |Ir para o site
-                  span.fa.fa-angle-right.fa-fw
-        .column.has-text-centered
-          figure
-            img(src="assets/images/g3635.png", alt="").image
-            figcaption
-              h2 Unidade Filial
-              h1.title.is-bold.has-spacingless-4 Patteo Mogilar 
-                br
-                | Sky Mall e Offices
-              p Confira os imóveis da Onix disponíveis
-              p.is-bold em Mogi das Cruzes e região
-              p
-                button.button.is-default
-                  |Ir para o site
-                  span.fa.fa-angle-right.fa-fw
-    include includes/newsletter
-
-    include includes/foot
+  include includes/foot

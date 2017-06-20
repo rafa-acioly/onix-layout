@@ -1,106 +1,102 @@
-doctype
-html(lang='pt-br')
-  include includes/head
+include includes/head
+  include includes/nav
 
-  body
-    include includes/nav
+  .wrap-content
+    .container
+      header.columns
+        .column.has-text-lefts
+          ul.breadcrumb
+            li Voltar
+            li Home
+            li Listagem de Imóveis
+          h1.title Título da busca realizada
+          h2.subtitle
+            small 243 imóveis encontrado(s)
+      aside.columns
+        - var lista = ['Pretensão', 'Valor de Venda', 'Finalidade', 'Tipo', 'Cidade', 'Caracteristica', 'Dormitórios', 'Suites', 'Vagas', 'Área útil/construida', 'Área total', 'Condominio fechado']
+        .column.is-3.is-hidden-mobile
+          .panel
+            each val in lista
+              a.panel-block
+                =val
+                span.panel-icon
+                  i.fa.fa-angle-down.fa-fw
+        .column.is-3.is-hidden-tablet
+          .field.is-horizontal
+            p.control
+              .select.is-fullwidth
+                select(name="")
+                  each op in lista
+                    option(value=op) #{op}
+        main.column
+          .level.header-options.is-hidden-mobile
+            .level-left
+              .level-item
+                .field.is-horizontal
+                  .field-body
+                    .field.is-grouped
+                      p.control.is-expanded
+                        span.select
+                          select(name="").is-borderless
+                            option(value="") por atualização
+                    .field
+                      p.control
+                        span.select
+                          select(name="").is-borderless
+                            option(value="") 12
+                            option(value="") 12
+                            option(value="") 3
+                            option(value="") 4
+                            option(value="") 5
+                            option(value="") 6
+                            option(value="") 7
+                            option(value="") 8
+                            option(value="") 9
+                            option(value="") 10
+                    p por página
+            .level-right.is-hidden-mobile
+              .level-item
+                button.button.is-borderless
+                  span.icon
+                    i.fa.fa-th
+              .level-item
+                button.button.is-borderless
+                  span.icon
+                    i.fa.fa-bars
+              .level-item
+                button.button.is-borderless
+                  span.icon
+                    i.fa.fa-map-marker
+          .columns.is-multiline
+            // Replicar cada coluna para listagem
+            - var n = 0
+            while n <= 10
+              .column.is-one-third
+                .card
+                  .card-image
+                    figure.image
+                      img(src="assets/images/placeholder.png", alt="")
+                      small.has-text-centered Ref.: TEF000
+                  .card-content
+                    .content
+                      h1.title.is-4 Terreno - Venda
+                      h2.subtitle.is-6 Real Park Tietê Jundiapeba - Mogi das Cruzes / SP
+                      .level
+                        .level-item.has-text-centered
+                          div
+                            h3.title.is-spaced 3
+                            small.subtitle dorm(s)
+                        .level-item.has-text-centered
+                          div
+                            h3.title.is-spaced 1
+                            small.subtitle suíte(s)
+                        .level-item.has-text-centered
+                          div
+                            h3.title.is-spaced 3
+                            small.subtitle Vagas
+                      p.title.is-lessspaced.is-6.label-price Valor da venda:
+                      p.subtitle.is-4.price R$ 100.000,00
+              - n++
+  include includes/newsletter
 
-    .wrap-content
-      .container
-        header.columns
-          .column.has-text-lefts
-            ul.breadcrumb
-              li Voltar
-              li Home
-              li Listagem de Imóveis
-            h1.title Título da busca realizada
-            h2.subtitle
-              small 243 imóveis encontrado(s)
-        aside.columns
-          - var lista = ['Pretensão', 'Valor de Venda', 'Finalidade', 'Tipo', 'Cidade', 'Caracteristica', 'Dormitórios', 'Suites', 'Vagas', 'Área útil/construida', 'Área total', 'Condominio fechado']
-          .column.is-3.is-hidden-mobile
-            .panel
-              each val in lista
-                a.panel-block
-                  =val
-                  span.panel-icon
-                    i.fa.fa-angle-down.fa-fw
-          .column.is-3.is-hidden-tablet
-            .field.is-horizontal
-              p.control
-                .select.is-fullwidth
-                  select(name="")
-                    each op in lista
-                      option(value=op) #{op}
-          main.column
-            .level.header-options.is-hidden-mobile
-              .level-left
-                .level-item
-                  .field.is-horizontal
-                    .field-body
-                      .field.is-grouped
-                        p.control.is-expanded
-                          span.select
-                            select(name="").is-borderless
-                              option(value="") por atualização
-                      .field
-                        p.control
-                          span.select
-                            select(name="").is-borderless
-                              option(value="") 12
-                              option(value="") 12
-                              option(value="") 3
-                              option(value="") 4
-                              option(value="") 5
-                              option(value="") 6
-                              option(value="") 7
-                              option(value="") 8
-                              option(value="") 9
-                              option(value="") 10
-                      p por página
-              .level-right.is-hidden-mobile
-                .level-item
-                  button.button.is-borderless
-                    span.icon
-                      i.fa.fa-th
-                .level-item
-                  button.button.is-borderless
-                    span.icon
-                      i.fa.fa-bars
-                .level-item
-                  button.button.is-borderless
-                    span.icon
-                      i.fa.fa-map-marker
-            .columns.is-multiline
-              // Replicar cada coluna para listagem
-              - var n = 0
-              while n <= 10
-                .column.is-one-third
-                  .card
-                    .card-image
-                      figure.image
-                        img(src="assets/images/placeholder.png", alt="")
-                        small.has-text-centered Ref.: TEF000
-                    .card-content
-                      .content
-                        h1.title.is-4 Terreno - Venda
-                        h2.subtitle.is-6 Real Park Tietê Jundiapeba - Mogi das Cruzes / SP
-                        .level
-                          .level-item.has-text-centered
-                            div
-                              h3.title.is-spaced 3
-                              small.subtitle dorm(s)
-                          .level-item.has-text-centered
-                            div
-                              h3.title.is-spaced 1
-                              small.subtitle suíte(s)
-                          .level-item.has-text-centered
-                            div
-                              h3.title.is-spaced 3
-                              small.subtitle Vagas
-                        p.title.is-lessspaced.is-6.label-price Valor da venda:
-                        p.subtitle.is-4.price R$ 100.000,00
-                - n++
-    include includes/newsletter
-
-    include includes/foot
+  include includes/foot
