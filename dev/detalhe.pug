@@ -1,52 +1,124 @@
-doctype
-html(lang='pt-br')
-  include includes/head
-  body
-    include includes/nav
-    .wrap-content-half
-      .has-text-centered
-        header
-          h2.subtitle
-            small TEF000
-          h1.title Terreno residencial à venda, Real Park 
+include includes/head
+  include includes/nav
+  
+  .wrap-content-half
+    .has-text-centered
+      header
+        h2.subtitle
+          small TEF000
+        h1.title Terreno residencial à venda, Real Park 
+          br
+          |Tietê undiapeba, Mogi das Cruzes.
+        h2.subtitle
+          small Valor de venda:
+          | 
+          | R$ 100.000,00
+      main.container.detail
+        .columns.is-gapless.is-half.is-offset-one-quarter.is-multiline
+          .column
+            img(src="assets/images/detalhe.png").image
+            .columns.mini.is-multiline
+              each val in [1,2,3,4,5,6]
+                .column
+                  img(src="assets/images/m"+val+".png")
+          .column.has-text-left.form-detail.is-5
+            h1.title.is-4 Tenho interesse neste imóvel
+            form(action="")
+              .field
+                p.control
+                  input(type="text", placeholder="Seu nome*", required).input
+              .field
+                p.control
+                  input(type="text", placeholder="Seu email*", required).input
+              .field
+                p.control
+                  input(type="text", placeholder="Seu telefone*", required).input
+              .field
+                p.control
+                  textarea(col="10", row="5").textarea Olá! Tenho interesse neste imóvel: Terreno no bairro Real Park
+              .field
+                p.control
+                  button.button.is-large.is-fullwidth Receber atendimento
+                    span.icons
+                      i.fa.fa-envelope-o.fa-fw
             br
-            |Tietê undiapeba, Mogi das Cruzes.
-          h2.subtitle
-            small Valor de venda:
-            | 
-            | R$ 100.000,00
-        main.container
-          .columns.is-gapless.is-half.is-offset-one-quarter
-            .column
-              img(src="assets/images/detalhe.png").image
-              .columns.mini.is-multiline
-                each val in [1,2,3,4,5,6]
-                  .column
-                    img(src="assets/images/m"+val+".png")
-            .column.has-text-left.form-detail.is-5
-              h1.title Tenho interesse neste imóvel
-              form
-                .field
-                  p.control
-                    input(type="text", placeholder="Seu nome", required).input
-                .field
-                  p.control
-                    input(type="text", placeholder="Seu email", required).input
-                .field
-                  p.control
-                    input(type="text", placeholder="Seu telefone", required).input
-                .field
-                  p.control
-                    textarea(col="10", row="5").textarea Olá! Tenho interesse neste imóvel: Terreno no bairro Real Park
-                .field
-                  p.control
-                    button.button.is-large.is-fullwidth Receber atendimento
-                      span.icons
-                        i.fa.fa-envelope-o.fa-fw
+            h2.subtitle ou
+              |
+              |
+              strong Faça uma Proposta
+            small.code TEF000
+            p Valor de venda: 
+              span.price R$ 100.000,00
+        .columns.is-half.is-offset-one-quarter
+          .column.detail-box.has-text-left
+            h1.title.is-4 Mais detalhes sobre este imóvel
+            .tabs.is-boxed
+              ul
+                li.is-active#first-tab
+                  a(href="") Infraestrutura
+                li#second-tab
+                  a(href="") Serviços
+                li#third-tab
+                  a(href="") Área
+            .tabs-content
+              p.first-tab Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at rhoncus risus. Suspendisse potenti. Curabi-tur vel ex quis lectus vestibulum dapibus nec volutpat massa. Integer et neque vel tortor posuere aliquet. Morbi tincidunt vel lectus vel accumsan. Donec varius, lectus malesuada aliquam vehicula, nulla purus pre-tium massa, sed pulvinar urna metus at eros.
+
+              p.second-tab  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse magni accusamus voluptates harum, porro consectetur ullam quis vel quia blanditiis eligendi! Porro, dolore. Quo voluptate maiores, a eligendi impedit sapiente.
+
+              p.third-tab  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam numquam corporis harum magni doloremque. Distinctio excepturi harum optio, repellendus quos officia consectetur hic ducimus numquam nemo commodi modi ea dolor!
+
+          .column.contact-box.has-text-left
+            h1.title.is-4 Trate direto com o corretos
+            .contact-content
+              h2.subtitle.is-5 Eduardo Marchese Junior
+              | CRECI: 86446
+              p
+                strong
+                  a(mailto="") marques@oniximobiliaria.com
               br
-              h2.subtitle ou Faça uma Proposta
-              | TEF000
-              p Valor de venda: R$ 100.00,00
-    
-    include includes/newsletter
-    include includes/foot
+              p
+                strong
+                  a(href="") Mais imóveis deste corretor
+                  span.fa.fa-angle-right.fa-fw
+
+        div.has-text-left.location
+          h1.title.is-4 Localização
+      section.hero.is-medium
+        <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14633.391207444505!2d-46.18525210000001!3d-23.519989900000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1497964797561" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      main.section.suggestion
+        .container
+          h1.title.is-4 Imóveis semelhantes
+          .columns.is-one-third.is-multiline
+            - var n = 0
+              while n <= 2
+                .column.is-one-third
+                  .card
+                    .card-image
+                      figure.image
+                        img(src="assets/images/placeholder.png", alt="")
+                        small.has-text-centered Ref.: TEF000
+                    .card-content
+                      .content.has-text-left
+                        h1.title.is-4 Terreno - Venda
+                        h2.subtitle.is-6 Real Park Tietê Jundiapeba - Mogi das Cruzes / SP
+                        .level
+                          .level-item.has-text-centered
+                            div
+                              h3.title.is-spaced 3
+                              small.subtitle dorm(s)
+                          .level-item.has-text-centered
+                            div
+                              h3.title.is-spaced 1
+                              small.subtitle suíte(s)
+                          .level-item.has-text-centered
+                            div
+                              h3.title.is-spaced 3
+                              small.subtitle Vagas
+                        p.title.is-lessspaced.is-6.label-price Valor da venda:
+                        p.subtitle.is-4.price R$ 100.000,00
+                - n++
+  
+  include includes/newsletter
+
+  include includes/foot

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
   <head>
     <title>Document</title>
     <meta charset="utf-8">
@@ -34,8 +34,8 @@
             R$ 100.000,00
           </h2>
         </header>
-        <main class="container">
-          <div class="columns is-gapless is-half is-offset-one-quarter">
+        <main class="container detail">
+          <div class="columns is-gapless is-half is-offset-one-quarter is-multiline">
             <div class="column"><img class="image" src="assets/images/detalhe.png">
               <div class="columns mini is-multiline">
                 <div class="column"><img src="assets/images/m1.png"></div>
@@ -47,21 +47,21 @@
               </div>
             </div>
             <div class="column has-text-left form-detail is-5">
-              <h1 class="title">Tenho interesse neste imóvel</h1>
-              <form>
+              <h1 class="title is-4">Tenho interesse neste imóvel</h1>
+              <form action="">
                 <div class="field">
                   <p class="control">
-                    <input class="input" type="text" placeholder="Seu nome" required>
+                    <input class="input" type="text" placeholder="Seu nome*" required>
                   </p>
                 </div>
                 <div class="field">
                   <p class="control">
-                    <input class="input" type="text" placeholder="Seu email" required>
+                    <input class="input" type="text" placeholder="Seu email*" required>
                   </p>
                 </div>
                 <div class="field">
                   <p class="control">
-                    <input class="input" type="text" placeholder="Seu telefone" required>
+                    <input class="input" type="text" placeholder="Seu telefone*" required>
                   </p>
                 </div>
                 <div class="field">
@@ -75,8 +75,143 @@
                   </p>
                 </div>
               </form><br>
-              <h2 class="subtitle">ou Faça uma Proposta</h2>TEF000
-              <p>Valor de venda: R$ 100.00,00</p>
+              <h2 class="subtitle">ou
+                
+                <strong>Faça uma Proposta</strong>
+              </h2><small class="code">TEF000</small>
+              <p>Valor de venda: <span class="price">R$ 100.000,00</span></p>
+            </div>
+          </div>
+          <div class="columns is-half is-offset-one-quarter">
+            <div class="column detail-box has-text-left">
+              <h1 class="title is-4">Mais detalhes sobre este imóvel</h1>
+              <div class="tabs is-boxed">
+                <ul>
+                  <li class="is-active" id="first-tab"><a href="">Infraestrutura</a></li>
+                  <li id="second-tab"><a href="">Serviços</a></li>
+                  <li id="third-tab"><a href="">Área</a></li>
+                </ul>
+              </div>
+              <div class="tabs-content">
+                <p class="first-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at rhoncus risus. Suspendisse potenti. Curabi-tur vel ex quis lectus vestibulum dapibus nec volutpat massa. Integer et neque vel tortor posuere aliquet. Morbi tincidunt vel lectus vel accumsan. Donec varius, lectus malesuada aliquam vehicula, nulla purus pre-tium massa, sed pulvinar urna metus at eros.</p>
+                <p class="second-tab"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse magni accusamus voluptates harum, porro consectetur ullam quis vel quia blanditiis eligendi! Porro, dolore. Quo voluptate maiores, a eligendi impedit sapiente.</p>
+                <p class="third-tab"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam numquam corporis harum magni doloremque. Distinctio excepturi harum optio, repellendus quos officia consectetur hic ducimus numquam nemo commodi modi ea dolor!</p>
+              </div>
+            </div>
+            <div class="column contact-box has-text-left">
+              <h1 class="title is-4">Trate direto com o corretos</h1>
+              <div class="contact-content">
+                <h2 class="subtitle is-5">Eduardo Marchese Junior</h2>CRECI: 86446
+                <p><strong><a mailto="">marques@oniximobiliaria.com</a></strong></p><br>
+                <p><strong><a href="">Mais imóveis deste corretor</a><span class="fa fa-angle-right fa-fw"></span></strong></p>
+              </div>
+            </div>
+          </div>
+          <div class="has-text-left location">
+            <h1 class="title is-4">Localização</h1>
+          </div>
+        </main>
+        <section class="hero is-medium"><iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14633.391207444505!2d-46.18525210000001!3d-23.519989900000002!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1497964797561" width="100%" height="300px" frameborder="0" style="border:0" allowfullscreen></iframe></section>
+        <main class="section suggestion">
+          <div class="container">
+            <h1 class="title is-4">Imóveis semelhantes</h1>
+            <div class="columns is-one-third is-multiline">
+              <div class="column is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image"><img src="assets/images/placeholder.png" alt=""><small class="has-text-centered">Ref.: TEF000</small></figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content has-text-left">
+                      <h1 class="title is-4">Terreno - Venda</h1>
+                      <h2 class="subtitle is-6">Real Park Tietê Jundiapeba - Mogi das Cruzes / SP</h2>
+                      <div class="level">
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <h3 class="title is-spaced">3</h3><small class="subtitle">dorm(s)</small>
+                          </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <h3 class="title is-spaced">1</h3><small class="subtitle">suíte(s)</small>
+                          </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <h3 class="title is-spaced">3</h3><small class="subtitle">Vagas</small>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="title is-lessspaced is-6 label-price">Valor da venda:</p>
+                      <p class="subtitle is-4 price">R$ 100.000,00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image"><img src="assets/images/placeholder.png" alt=""><small class="has-text-centered">Ref.: TEF000</small></figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content has-text-left">
+                      <h1 class="title is-4">Terreno - Venda</h1>
+                      <h2 class="subtitle is-6">Real Park Tietê Jundiapeba - Mogi das Cruzes / SP</h2>
+                      <div class="level">
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <h3 class="title is-spaced">3</h3><small class="subtitle">dorm(s)</small>
+                          </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <h3 class="title is-spaced">1</h3><small class="subtitle">suíte(s)</small>
+                          </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <h3 class="title is-spaced">3</h3><small class="subtitle">Vagas</small>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="title is-lessspaced is-6 label-price">Valor da venda:</p>
+                      <p class="subtitle is-4 price">R$ 100.000,00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-one-third">
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image"><img src="assets/images/placeholder.png" alt=""><small class="has-text-centered">Ref.: TEF000</small></figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content has-text-left">
+                      <h1 class="title is-4">Terreno - Venda</h1>
+                      <h2 class="subtitle is-6">Real Park Tietê Jundiapeba - Mogi das Cruzes / SP</h2>
+                      <div class="level">
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <h3 class="title is-spaced">3</h3><small class="subtitle">dorm(s)</small>
+                          </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <h3 class="title is-spaced">1</h3><small class="subtitle">suíte(s)</small>
+                          </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <h3 class="title is-spaced">3</h3><small class="subtitle">Vagas</small>
+                          </div>
+                        </div>
+                      </div>
+                      <p class="title is-lessspaced is-6 label-price">Valor da venda:</p>
+                      <p class="subtitle is-4 price">R$ 100.000,00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </main>

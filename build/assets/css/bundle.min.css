@@ -13179,5 +13179,87 @@ main select {
     background-color: white;
     border-radius: 10px;
     margin-top: -2rem;
-    padding: 1rem 1.5rem; }
+    padding: 1rem 1.5rem;
+    font-family: 'Montserrat', sans-serif; }
+    .wrap-content-half .columns .form-detail .title {
+      color: #e51c24;
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      letter-spacing: -2px; }
+    .wrap-content-half .columns .form-detail .input,
+    .wrap-content-half .columns .form-detail .textarea {
+      border-radius: 0;
+      background-color: #e0e0e0;
+      box-shadow: none; }
+    .wrap-content-half .columns .form-detail .button {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      background-color: #e51c24;
+      color: white;
+      font-size: 1.5rem;
+      letter-spacing: -2px; }
+    .wrap-content-half .columns .form-detail .code + p {
+      color: #808080; }
+    .wrap-content-half .columns .form-detail p .price {
+      font-size: 1.4rem;
+      letter-spacing: -2px; }
+    @media screen and (max-width: 769px) {
+      .wrap-content-half .columns .form-detail {
+        margin: 1rem; } }
+
+.detail .detail-box,
+.detail .contact-box {
+  margin: 3rem 0; }
+  .detail .detail-box .title,
+  .detail .contact-box .title {
+    color: #e51c24; }
+
+.detail .detail-box .tabs {
+  margin-bottom: 0; }
+  .detail .detail-box .tabs ul {
+    border-bottom: none; }
+  .detail .detail-box .tabs li.is-active a {
+    border-color: transparent;
+    color: black;
+    font-weight: bold; }
+  .detail .detail-box .tabs li {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+    .detail .detail-box .tabs li .active {
+      border-color: none; }
+  .detail .detail-box .tabs li:not(:first-child) {
+    margin: 0 .2rem; }
+  .detail .detail-box .tabs li:not(.active) {
+    background-color: #c6c6c6; }
+
+.detail .detail-box .tabs-content {
+  background-color: white;
+  padding: 1rem;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+  .detail .detail-box .tabs-content p:not(.first-tab) {
+    display: none; }
+
+.detail .contact-box .contact-content {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  height: calc(100% - 3rem); }
+  .detail .contact-box .contact-content .subtitle {
+    margin-bottom: 0;
+    font-weight: bold;
+    color: black; }
+  .detail .contact-box .contact-content p:last-child {
+    margin-top: 7%; }
+
+.location .title {
+  color: #e51c24;
+  margin-bottom: 1rem; }
+
+.suggestion {
+  background-color: #f1f1f1; }
+  .suggestion .container > .title {
+    color: #e51c24; }
 

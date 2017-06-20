@@ -270,6 +270,136 @@ main
     .form-detail
       background:
         color: white
-      border-radius: 10px
-      margin-top: -2rem
+      border:
+        radius: 10px
+      margin:
+        top: -2rem
       padding: 1rem 1.5rem
+      font-family: 'Montserrat', sans-serif
+
+      .title
+        color: $main-red
+        margin:
+          bottom: 1rem
+          top: 1rem
+        letter-spacing: -2px
+
+      .input,
+      .textarea
+        border-radius: 0
+        background-color: $gray
+        box-shadow: none
+
+      .button
+        justify-content: space-between
+        background:
+          color: $main-red
+        color: white
+        font-size: 1.5rem
+        letter-spacing: -2px
+
+      .code,
+        & + p
+            color: $lighter-gray
+
+      p
+        .price
+          font-size: 1.4rem
+          letter-spacing: -2px
+
+      @media screen and (max-width: $tablet)
+        margin: 1rem
+
+
+.detail
+
+  .detail-box,
+  .contact-box,
+
+    .title
+      color: $main-red
+
+    margin: 3rem 0
+
+  .detail-box
+
+    .tabs
+      margin-bottom: 0
+
+      ul
+        border-bottom: none
+
+      li.is-active
+
+        a
+          border:
+            color: transparent
+          color: black
+          font-weight: bold
+
+      li
+        border:
+          top-left-radius: 5px
+          top-right-radius: 5px
+
+        .active
+          border:
+            color: none
+
+      li:not(:first-child)
+        margin: 0 .2rem
+
+      li:not(.active)
+        background: 
+          color: #c6c6c6
+    
+    .tabs-content
+
+      background:
+        color: white
+
+      padding: 1rem
+
+      border:
+        top-right-radius: 5px
+        bottom-left-radius: 5px
+        bottom-right-radius: 5px
+
+      p:not(.first-tab)
+        display: none
+
+  .contact-box
+
+    .contact-content
+      background:
+        color: white
+      padding: 1rem
+      border:
+        radius: 8px
+      height: calc(100% - 3rem)
+
+      .subtitle
+        margin:
+          bottom: 0
+        font-weight: bold
+        color: black
+
+      p:last-child
+        margin-top: 7%
+
+.location
+  .title
+    color: $main-red
+    margin:
+      bottom: 1rem
+
+.suggestion
+  background:
+    color: #f1f1f1
+
+  .container
+    
+    &
+      >
+        .title
+          color: $main-red
